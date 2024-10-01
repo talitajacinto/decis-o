@@ -7,12 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Digite "S" par cadastrar um novo aluno</p>
     <script>
-        let num = 6;
-        
-        if ( num <7) {
-            document.write ("O numero é :"+num)
-        }
+       let opc = prompt ("Deseja cadastrar um aluno S ou N")
+
+       if (opc == "S") {
+        let nomeAluno = prompt ("Digite o nome do aluno <br>")
+        let anoNasci = parseInt (prompt ("Digite o ano de nascimento <br>"))
+        let sexo = prompt ("Digite o sexo <br>")
+        let idade = 2024 - anoNasci
+        // retorna as informações do Aluno
+        document.write ("Aluno;" +nomeAluno+ "<br>")
+        document.write ("Sexo;" +sexo+"<br>")
+        document.write ("Idade;" +idade+ "<br>")
+
+       } else {
+        document.write ("Obrigado volte sempre")
+       }
         
         
     </script>
